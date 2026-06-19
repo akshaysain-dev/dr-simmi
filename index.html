@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Simmi 💕 A Little Page of Love</title>
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating petals/hearts background -->
+<div class="floaters" id="floaters"></div>
+
+<!-- Cursor sparkle trail -->
+<div class="sparkle-layer" id="sparkleLayer"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-nav">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="#hero">
+      <i class="fa-solid fa-heart-pulse"></i> Dr. Simmi
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#hero">Welcome</a></li>
+        <li class="nav-item"><a class="nav-link" href="#quotes">Quotes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Memories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blessings">Blessings</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero-section">
+  <div class="container text-center hero-content">
+    <div class="eyebrow-pill reveal-up">✨ a little page made with love ✨</div>
+    <h1 class="hero-title reveal-up" data-delay="1">
+      For the one & only,<br>
+      <span class="name-shimmer">Dr. Simmi</span>
+    </h1>
+    <p class="hero-sub reveal-up" data-delay="2">
+      Some friendships don't need a reason to be celebrated —<br class="d-none d-md-block">
+      they just need a little reminder of how loved they are. This one's for you. 🌸
+    </p>
+    <a href="#quotes" class="btn btn-hero reveal-up" data-delay="3">
+      Scroll for the sweetness <i class="fa-solid fa-arrow-down-long ms-2"></i>
+    </a>
+  </div>
+
+  <!-- decorative blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="scroll-hint">
+    <span></span>
+  </div>
+</section>
+
+<!-- QUOTES SECTION -->
+<section id="quotes" class="quotes-section">
+  <div class="container">
+    <p class="section-eyebrow text-center reveal-on-scroll">words that feel like her</p>
+    <h2 class="section-title text-center reveal-on-scroll">Friendship, in a few honest lines</h2>
+
+    <div class="quote-carousel reveal-on-scroll">
+      <div class="quote-track" id="quoteTrack">
+
+        <div class="quote-card">
+          <i class="fa-solid fa-quote-left quote-mark"></i>
+          <p class="quote-text">A good friend remembers what you forgot you said. Dr. Simmi remembers everything — and loves you anyway.</p>
+          <span class="quote-author">— for Dr. Simmi</span>
+        </div>
+
+        <div class="quote-card">
+          <i class="fa-solid fa-quote-left quote-mark"></i>
+          <p class="quote-text">Some people bring out the sun in you. Dr. Simmi never even has to try.</p>
+          <span class="quote-author">— for Dr. Simmi</span>
+        </div>
+
+        <div class="quote-card">
+          <i class="fa-solid fa-quote-left quote-mark"></i>
+          <p class="quote-text">Distance, silence, busy days — none of it changes a friendship that was built on something real.</p>
+          <span class="quote-author">— for Dr. Simmi</span>
+        </div>
+
+        <div class="quote-card">
+          <i class="fa-solid fa-quote-left quote-mark"></i>
+          <p class="quote-text">A true friend doesn't just walk beside you — she heals people all day and still has room left in her heart for you.</p>
+          <span class="quote-author">— for Dr. Simmi</span>
+        </div>
+
+        <div class="quote-card">
+          <i class="fa-solid fa-quote-left quote-mark"></i>
+          <p class="quote-text">Friendship isn't about being inseparable. It's about being separated and knowing nothing will change.</p>
+          <span class="quote-author">— for Dr. Simmi</span>
+        </div>
+
+      </div>
+
+      <div class="carousel-controls">
+        <button class="ctrl-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="dots" id="dots"></div>
+        <button class="ctrl-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <p class="section-eyebrow text-center reveal-on-scroll">moments that say it best</p>
+    <h2 class="section-title text-center reveal-on-scroll">What friendship looks like</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4 reveal-on-scroll">
+        <div class="polaroid">
+          <div class="polaroid-img" style="background-image:url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&q=80')"></div>
+          <p class="polaroid-caption">Hugs that say everything words can't</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-on-scroll" data-delay="1">
+        <div class="polaroid polaroid-mid">
+          <div class="polaroid-img" style="background-image:url('https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&q=80')"></div>
+          <p class="polaroid-caption">Laughing over absolutely nothing</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal-on-scroll" data-delay="2">
+        <div class="polaroid">
+          <div class="polaroid-img" style="background-image:url('https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=600&q=80')"></div>
+          <p class="polaroid-caption">Forever kind of people</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLESSINGS SECTION -->
+<section id="blessings" class="blessings-section">
+  <div class="container">
+    <p class="section-eyebrow text-center reveal-on-scroll">from my heart to your future</p>
+    <h2 class="section-title text-center reveal-on-scroll">Blessings for Dr. Simmi 🌷</h2>
+    <p class="section-desc text-center reveal-on-scroll">
+      May every page of your story be as kind as you are. Here's everything I wish for you.
+    </p>
+
+    <div class="row g-4 mt-4">
+
+      <div class="col-md-4 reveal-on-scroll">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-heart-circle-check bless-icon"></i>
+              <h5>Health & Happiness</h5>
+            </div>
+            <div class="bless-back">
+              <p>May you always have the strength to heal others, and the rest you deserve to heal yourself too.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal-on-scroll" data-delay="1">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-star bless-icon"></i>
+              <h5>Success & Growth</h5>
+            </div>
+            <div class="bless-back">
+              <p>May every dream you've quietly worked for find its way to you, exactly when you need it most.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal-on-scroll" data-delay="2">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-dove bless-icon"></i>
+              <h5>Peace & Love</h5>
+            </div>
+            <div class="bless-back">
+              <p>May your home always feel calm, your people always feel close, and your heart always feel full.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal-on-scroll">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-hand-holding-heart bless-icon"></i>
+              <h5>Kindness Returned</h5>
+            </div>
+            <div class="bless-back">
+              <p>You give so much of yourself to everyone. May the world learn to give it back to you too.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal-on-scroll" data-delay="1">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-seedling bless-icon"></i>
+              <h5>New Beginnings</h5>
+            </div>
+            <div class="bless-back">
+              <p>May every new chapter of your life be softer, brighter, and even more beautiful than the last.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 reveal-on-scroll" data-delay="2">
+        <div class="bless-card">
+          <div class="bless-card-inner">
+            <div class="bless-front">
+              <i class="fa-solid fa-infinity bless-icon"></i>
+              <h5>This Friendship</h5>
+            </div>
+            <div class="bless-back">
+              <p>May whatever this is between us never need an occasion, an apology, or an ending.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- floating note -->
+  <div class="closing-note reveal-on-scroll">
+    <p class="note-text">
+      "Dr. Simmi, this little page is just a small thank-you for being the kind of friend<br class="d-none d-md-block">
+      people write about. Here's to everything still ahead of you." 💌
+    </p>
+    <span class="note-signature">— with love, always</span>
+  </div>
+</section>
+
+<footer class="site-footer text-center">
+  <p>Made with <i class="fa-solid fa-heart beat"></i> for Dr. Simmi</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
